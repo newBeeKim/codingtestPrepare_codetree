@@ -6,24 +6,12 @@ int main() {
     int temp;
     int cnt = 0;
 
-    cin >> symptom >> temp;
-    if(symptom == 'Y'){
-        if(temp >= 37){
-            cnt += 1;
-        }
-    }
-
-    cin >> symptom >> temp;
-    if(symptom == 'Y'){
-        if(temp >= 37){
-            cnt += 1;
-        }
-    }
-
-    cin >> symptom >> temp;
-    if(symptom == 'Y'){
-        if(temp >= 37){
-            cnt += 1;
+    for(int i= 0; i < 3; i++){
+        cin >> symptom >> temp;
+        if(symptom == 'Y'){
+            if(temp >= 37){
+                cnt += 1;
+            }
         }
     }
 
